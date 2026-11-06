@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = "An extension to the billing module that allows you to extend a subscription to cover multiple teams"
   spec.description = "An extension to the billing module that allows you to extend a subscription to cover multiple teams"
-  spec.homepage = "https://github.com/bullet-train-co/bullet_train-billing-umbrella_subscriptions"
+  spec.homepage = "https://github.com/tujucreative/bullet_train-billing-umbrella_subscriptions"
   spec.required_ruby_version = ">= 2.6.0"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bullet_train-billing-usage"
   spec.add_dependency "verbs"
 
-  spec.add_development_dependency "pg", "~> 1.4.5"
   spec.add_development_dependency "factory_bot_rails", "~> 6.2.0"
   spec.add_development_dependency "standard"
   spec.add_development_dependency "debug"

@@ -1,5 +1,6 @@
 module BulletTrain::Billing::UmbrellaSubscriptions::TeamMonkeyPatch
   extend ActiveSupport::Concern
+
   prepended do
     has_many :billing_umbrella_subscriptions, class_name: "Billing::Umbrella::Subscription", dependent: :destroy, foreign_key: :team_id
     has_many :billing_covering_subscriptions, class_name: "Billing::Umbrella::Subscription", dependent: :destroy, foreign_key: :covering_team_id
