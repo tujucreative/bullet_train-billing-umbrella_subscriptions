@@ -17,7 +17,7 @@ Rails.application.configure do
   # config.eager_load = ENV["CI"].present?
   # TODO: For now we're disabling eager loading to sidestep dependency hell in CircleCI.
   # We may want to turn it back on?
-  config.eager_load = false
+  config.eager_load = ENV["CI"].present?
 
   # Configure public file server for tests with Cache-Control for performance.
   config.public_file_server.enabled = true
